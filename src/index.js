@@ -25,6 +25,6 @@ module.exports = {
       } catch (error) {
         console.error("TEST failed", error.message);
       }
-    }, 10000);
+    }, 250000);
   },
 };
