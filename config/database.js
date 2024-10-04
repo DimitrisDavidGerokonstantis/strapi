@@ -15,7 +15,7 @@ module.exports = ({ env }) => ({
     },
     pool: {
       min: 1,
-      max: 5,
+      max: 4,
     },
     debug: false,
   },
