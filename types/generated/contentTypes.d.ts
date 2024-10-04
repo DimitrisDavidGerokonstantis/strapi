@@ -368,6 +368,7 @@ export interface ApiCvCv extends Schema.SingleType {
     singularName: 'cv';
     pluralName: 'cvs';
     displayName: 'CV';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -381,6 +382,7 @@ export interface ApiCvCv extends Schema.SingleType {
           preset: 'rich';
         }
       >;
+    dummy: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
