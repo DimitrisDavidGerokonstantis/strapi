@@ -374,7 +374,6 @@ export interface ApiCvCv extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    dummy: Attribute.String;
     content: Attribute.RichText & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

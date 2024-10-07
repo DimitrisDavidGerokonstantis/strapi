@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "dummy": {
-      "type": "string"
-    },
     "content": {
       "type": "richtext",
       "required": true

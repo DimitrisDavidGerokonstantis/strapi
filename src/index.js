@@ -1,5 +1,6 @@
 "use strict";
 const axios = require("axios");
+const { getIO } = require("./socket");
 
 module.exports = {
   /**
@@ -25,6 +26,10 @@ module.exports = {
       } catch (error) {
         console.error("TEST failed", error.message);
       }
-    }, 10000);
+    }, 250000);
+    // @ts-ignore
+    getIO().on("connection", (socket) => {
+      console.log("Client connected:", socket.id);
+    });
   },
 };
