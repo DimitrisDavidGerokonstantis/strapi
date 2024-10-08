@@ -375,6 +375,26 @@ export interface ApiCvCv extends Schema.SingleType {
   };
   attributes: {
     content: Attribute.RichText & Attribute.Required;
+    defaultFont: Attribute.Enumeration<
+      [
+        'exo-2',
+        'exo-2-extra-large',
+        'exo-2-bold',
+        'exo-2-bold-extra-large',
+        'iceland-regular',
+        'iceland-regular-extra-large',
+        'iceland-regular-bold',
+        'iceland-regular-bold-extra-large',
+        'playwrite-de-grund',
+        'playwrite-de-grund-bold',
+        'playwrite-de-grund-extra-large',
+        'playwrite-de-grund-bold-extra-large',
+        'quicksand',
+        'quicksand-extra-large',
+        'quicksand-bold',
+        'quicksand-bold-extra-large'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
