@@ -19,14 +19,14 @@ module.exports = {
    * run jobs, or perform some special logic.
    */
   bootstrap(/*{ strapi }*/) {
-    setInterval(async () => {
-      try {
-        await axios.get("https://strapi-server-4g0r.onrender.com/api/cv");
-        console.log("TEST!");
-      } catch (error) {
-        console.error("TEST failed", error.message);
-      }
-    }, 250000);
+    // setInterval(async () => {
+    //   try {
+    //     await axios.get("https://strapi-server-4g0r.onrender.com/api/cv");
+    //     console.log("TEST!");
+    //   } catch (error) {
+    //     console.error("TEST failed", error.message);
+    //   }
+    // }, 250000);
     // @ts-ignore
     getIO().on("connection", (socket) => {
       console.log("Client connected:", socket.id);
